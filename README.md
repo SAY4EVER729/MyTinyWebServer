@@ -126,6 +126,8 @@ webbench 压测：
 ![138384de0b6a2c097a4e67992732489](https://github.com/SAY4EVER729/MyTinyWebServer/assets/101921097/2ebdef56-84ce-463b-ad94-832d28c7cb25)
 
 
+## 学习顺序
+
 
 本项目编写的顺序（每个目录中都有相应的学习记录Readme）：
 
