@@ -84,7 +84,35 @@ sh ./build.sh
 
 ## 测试
 
+### webbench 环境
+
+首先保证拥有 ```<rpc/types.h>``` 头文件
+
+下载，然后通过软连接，连接至项 usr/include 库
+
+```bash
+# Ubuntu
+sudo apt-get install -y libtirpc-dev
+# 软连接
+sudo ln -s /usr/include/tirpc/rpc/types.h /usr/include/rpc
+sudo ln -s /usr/include/tirpc/netconfig.h /usr/include
+sudo apt-get install universal-ctags
+```
+
+### 编译 webbench
+
+```Bash
+gcc webbench.c -o webbench
+```
+
+### 运行并压测
+
 webbench 压测：
+
+```bash
+# 3001并发数量， 时间 5 秒
+./webbench -c 3001 -t 5 http://120.53.228.144:9006/
+```
 
 腾讯云 2 G 2 核下：
 
